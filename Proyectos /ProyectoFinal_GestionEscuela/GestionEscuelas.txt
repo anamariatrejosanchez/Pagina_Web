@@ -1,0 +1,3003 @@
+package com.mycompany.gestionescuelas;
+import java.util.Scanner;
+/**
+ *
+ * @author anita
+ */
+public class GestionEscuelas {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    
+    char escuela,areaescuela,personal;
+    int estudiante,maestro,personalEsc;
+ 
+  System.out.println("***CONSULTA DE DATOS***\n");
+
+  System.out.println("°Selecciona la escuela que quieras consultar (Tecle la letra que tiene)\n\n" +
+        "A) Colegio San Martín \n" +
+        "B) Instituto América \n" +
+        "C) Colegio Santa Teresa\n" +
+        "D) Escuela Bilingüe Horizontes\n" +
+        "E) Escuela Elemental Arco Iris\n" +
+        "F) Latin American School \n"+
+        "G) Colegio Americano Saltillo \n"+
+        "H) Colegio Valle de Filadelfia \n"+
+        "I) Colegio Larrea \n"+
+        "J) Cecati 64 \n"+
+        "K) Colegio de México \n"+
+        "L) Instituto Politécnico Nacional \n"+
+        "M) Universidad de Guadalajara \n"+
+        "N) Universidad Autónoma Metropolitana \n"+
+        "Ñ) UTSJ");
+  
+       escuela = sc.next().charAt(0);
+       
+        switch (escuela) {
+            case 'A':
+                
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("-------Colegio San Martín-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;
+                
+                
+            case 'B':
+                        
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Instituto América-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;
+                   
+            case 'C':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Colegio Santa Teresa-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;
+            case 'D':
+    System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("-------Escuela Bilingüe Horizontes-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;            
+   
+                
+            case 'E':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Escuela Elemental Arco Iris-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;        
+              
+                
+            case 'F':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("-------Latin American School-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;
+                
+               
+                case 'G':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personale:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Colegio Americano Saltillo-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;        
+               
+                case 'H':    
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("-------Colegio Valle de Filadelfia-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;
+             
+                case 'I':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Colegio Larrea-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }                  
+                break;
+                case 'J':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Docente:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Docente:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Docente:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Docente:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("-------Cecati 64 -------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Docente:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;
+        
+                case 'K':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Colegio de México-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;        
+               
+                case 'L':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("------- Instituto Politécnico Nacional-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;
+                
+               
+                case 'M':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------IUniversidad de Guadalajara-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------Universidad de Guadalajara-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;  
+                
+                case 'N':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 2563 \n"+
+                 "2.- 5897\n"+
+                 "3.- 2571\n"+
+                 "4.- 3978\n"+
+                 "5.- 8462\n");  
+          estudiante= sc. nextInt();           
+     case 2563:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 5897 :
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 2571:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 3978:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 8462:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 1001 \n"+
+                 "2.- 1002\n"+
+                 "3.- 1003\n"+
+                 "4.- 1004\n"+
+                 "5.- 1005\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 1001:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 1002:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 1003:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 1004:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 1005:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 8593 \n"+
+                 "2.- 8594\n"+
+                 "3.- 8595\n"+
+                 "4.- 8596\n"+
+                 "5.- 8597\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 8593:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 8594:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 8595:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 8596:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 8597:
+        System.out.println("-------Universidad Autónoma Metropolitana-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }  
+                break;
+                
+               
+                
+                case 'Ñ':
+        System.out.println("¿A que desea acceder?\n(Tecle el numero)\n"+
+                "1)Estudiantes\n"+
+                "2)Maestros\n"+
+                "3)Personal");        
+            areaescuela= sc.next().charAt(0); 
+            
+        switch (areaescuela) {
+            case '1':
+    System.out.println("¿De que estudiante deseas consultar?(Teclea su matricula)\n"+
+                 "1.- 1342 \n"+
+                 "2.- 1343\n"+
+                 "3.- 1344\n"+
+                 "4.- 1345\n"+
+                 "5.- 1346\n");  
+          estudiante= sc. nextInt();           
+     case 1342:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2563 \n"+
+                           "Nombre :Juan Fernando Pérez del Corral\n"+
+                           "Carrera:Fisioterapia \n"+
+                           "Numero Telefono:448-635-58-96\n"+
+                           "Correo Electronico: matecome2016@hotmail.com \n");                
+                break;
+                  case 1343 :
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:5897\n"+
+                           "Nombre :Sara Teresa Sánchez del Pinar\n"+
+                           "Carrera:Pedagogía \n"+
+                           "Numero Telefono:236-789-12-79\n"+
+                           "Correo Electronico:tecnica82historia@gmail.com \n");               
+         
+                break;
+                  case 1344:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:2571\n"+
+                           "Nombre :Efraín de las Casas Mejía\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-120-34-69\n"+
+                           "Correo Electronico:oldergs_83@hotmail.com \n");                
+                 
+                break;
+            case 1345:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:3978\n"+
+                           "Nombre :Matías de Greiff Rincón\n"+
+                           "Carrera:Diseño Gráfico \n"+
+                           "Numero Telefono:589-102-36-96\n"+
+                           "Correo Electronico:espanol3.est82@gmail.com \n");                      
+                break;
+                
+            case 1346:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****ESTUDIANTES*****\n");           
+        System.out.println("Matricula:8462\n"+
+                           "Nombre :Sebastián del Campo Yepes\n"+
+                           "Carrera:Geología \n"+
+                           "Numero Telefono:145-639-01-26\n"+
+                           "Correo Electronico:antoniod82m@gmail.com \n");        
+                break;
+            default:
+                System.out.println("No se encontro la Matricula del alumno ");
+                break;
+                
+            case '2':
+         System.out.println("¿De que Maestro deseas consultar los datos?(Teclea el ID del docente)\n"+
+                 "1.- 9863 \n"+
+                 "2.- 9864\n"+
+                 "3.- 9865\n"+
+                 "4.- 9866\n"+
+                 "5.- 9867\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9863:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1001\n"+
+                           "Nombre :Sara Pérez de Acevedo\n"+
+                           "Área de Especialización:Matemáticas \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Correo Electronico:formahistoria82m@gmail.com \n"+
+                           "Horas de trabajo:9 horas \n");           
+                break;
+            case 9864:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1002\n"+
+                           "Nombre :Rosa María Gómez de Jiménez\n"+
+                           "Área de Especialización:Psicopedagogía \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Correo Electronico:michel.fisicaii@gmail.com \n"+
+                           "Horas de trabajo:12 horas \n");           
+                break;
+            case 9865:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1003\n"+
+                           "Nombre :Eliana Ramírez de De la Calle\n"+
+                           "Área de Especialización:Música \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Correo Electronico:nangar23@gmail.com \n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9866:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1004\n"+
+                           "Nombre :Laura Espinosa de De la Torre\n"+
+                           "Área de Especialización:Ciencias \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Correo Electronico:ingles.ines.2h@hotmail.com\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9867:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****MESTROS*****\n");           
+        System.out.println("ID Docente:1005\n"+
+                           "Nombre :Daniel La Roche Zuluaga\n"+
+                           "Área de Especialización:Educación Física:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Correo Electronico:matecome2016@hotmail.com\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del maestro");     
+        }          
+                break;
+                
+            case '3':
+        System.out.println("Teclea el ID para consultar infromacion del personal.Se muestran a continuacion )\n"+
+                 "1.- 9632 \n"+
+                 "2.- 9633\n"+
+                 "3.- 9634\n"+
+                 "4.- 9635\n"+
+                 "5.- 9636\n");  
+          maestro= sc.nextInt();  
+      
+        switch (maestro) {
+            case 9632:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8593\n"+
+                           "Nombre :Sofía Martínez\n"+
+                           "Área:Directora \n"+
+                           "Numero Telefono:256-964-78-03\n"+
+                           "Horas de trabajo:8 horas \n");           
+                break;
+            case 9633:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8594\n"+
+                           "Nombre :Carlos Fernández\n"+
+                           "Área de Especialización:Secretario \n"+
+                           "Numero Telefono:489-365-98-45\n"+
+                           "Horas de trabajo:10 horas \n");           
+                break;
+            case 9634:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8595\n"+
+                           "Nombre :Valentina Rodríguez\n"+
+                           "Área de Especialización:Conserje \n"+
+                           "Numero Telefono:589-632-89-73\n"+
+                           "Horas de trabajo:8 horas \n");          
+                break;
+            case 9635:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8596\n"+
+                           "Nombre :Camila Díaz\n"+
+                           "Área de Especialización:Secretario Director  \n"+
+                           "Numero Telefono:256-349-85-63\n"+
+                           "Horas de trabajo:7 horas \n");        
+                break;
+                
+            case 9636:
+        System.out.println("-------UTSJ-------\n"); 
+        System.out.println("*****PERSONAL*****\n");           
+        System.out.println("ID Personal:8597\n"+
+                           "Nombre :Juan Ramírez\n"+
+                           "Área de Especialización:Auxiliar Maestro:\n" +
+                           "Numero Telefono:789-563-78-96\n"+
+                           "Horas de trabajo:6 horas \n");       
+             break; 
+            default:
+                System.out.println("No se encontro el ID del personal ");     
+        }  
+                break;
+        }           
+                break;        
+         
+            default:
+                System.out.println("NO SE ENCONTRO LA ESCUELA");     
+        }
+    }
+}
