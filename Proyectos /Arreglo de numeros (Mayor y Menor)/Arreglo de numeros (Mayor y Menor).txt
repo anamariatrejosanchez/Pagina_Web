@@ -1,27 +1,23 @@
 #include <iostream>
 using namespace std;
 
-//Hacer un arreglo con 7 elementos(pedir datos al usuario )Que encuentre el mayor y menor de los elementos
+int main() {
+    int arreglo[7];
 
-int main()
+    cout << "A continuación ingresarás 7 datos:" << endl;
 
-{
-int arreglo [7];
+    // Pedir datos al usuario
+    for (int i = 0; i < 7; ++i) {
+        cout << "Ingresa un valor: ";
+        cin >> arreglo[i];
+    }
 
-    cout<<"A continuacion ingresaras 7 datos "<<endl;
+    // Encontrar el número mayor y menor
+    int numMayor = arreglo[0];
+    int numMenor = arreglo[0];
 
-for(int i=0; i<7 ;i++)
-  { 
-      
-            cout<<"Ingresa un valor "<<endl;
-      cin>>arreglo[i];
-  }
-  int numMayor=arreglo[0];
-  int numMenor=arreglo[0];
-
- for (int i = 1; i<7;++i) {
-        if (arreglo[i] >numMayor)
-        {
+    for (int i = 1; i < 7; ++i) {
+        if (arreglo[i] > numMayor) {
             numMayor = arreglo[i];
         }
         if (arreglo[i] < numMenor) {
@@ -29,8 +25,9 @@ for(int i=0; i<7 ;i++)
         }
     }
 
-    cout<<"El numero mayor es "<<numMayor<<endl;
-    cout<<"El numero menor es "<<numMenor<<endl;
+    // Mostrar resultados
+    cout << "El número mayor es: " << numMayor << endl;
+    cout << "El número menor es: " << numMenor << endl;
 
     return 0;
 }

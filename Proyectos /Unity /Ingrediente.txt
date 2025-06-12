@@ -1,0 +1,15 @@
+using UnityEngine;
+public class Ingrediente
+{
+    public string Nombre { get; private set; }
+
+    public Ingrediente(string nombre)
+    {
+        Nombre = nombre;
+    }
+
+    public void MostrarIngrediente()
+    {
+        Debug.Log($"Se ha agregado {Nombre}.");
+    }
+}

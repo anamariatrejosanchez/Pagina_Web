@@ -1,0 +1,190 @@
+#include <iostream>
+#include <map>
+#include <set>
+#include <list>
+#include <stack>
+using namespace std;
+
+
+class Auto {
+private:
+    string placa, modelo, tipo;
+    bool disponible;
+    double precio;
+
+public:
+    Auto() {}
+    Auto(string p, string m, string t, double pr) {
+        placa = p;
+        modelo = m;
+        tipo = t;
+        precio = pr;
+        disponible = true;
+    }
+
+    string getPlaca() { return placa; }
+    string getTipo() { return tipo; }
+    string getModelo() { return modelo; }
+    double getPrecio() { return precio; }
+    bool estaDisponible() { return disponible; }
+
+    void rentar() { disponible = false; }
+    void devolver() { disponible = true; }
+
+    void mostrar() {
+        cout << "Placa: " << placa << " | Modelo: " << modelo
+             << " | Tipo: " << tipo << " | Precio/día: $" << precio
+             << " | Estado: " << (disponible ? "Disponible" : "Rentado") << endl;
+    }
+};
+
+
+
+class Cliente {
+private:
+    string nombre, licencia, telefono;
+
+public:
+    Cliente() {}
+    Cliente(string n, string l, string t) {
+        nombre = n;
+        licencia = l;
+        telefono = t;
+    }
+
+    void mostrar() {
+        cout << "Nombre: " << nombre << " | Licencia: " << licencia << " | Tel: " << telefono << endl;
+    }
+};
+
+
+
+class Sistema {
+private:
+    map<string, Auto> autos;
+    set<string> tipos;
+    list<Cliente> clientes;
+    stack<Auto> devueltos;
+
+public:
+    void agregarAuto(string placa, string modelo, string tipo, double precio) {
+        autos[placa] = Auto(placa, modelo, tipo, precio);
+        tipos.insert(tipo);
+    }
+
+    void rentarAuto() {
+        cout << "\nTipos:\n1. Deportivo\n2. Familiar\n3. Camioneta\nElige: ";
+        int tipo;
+        cin >> tipo;
+        cin.ignore();
+
+        string tipoSel;
+        switch(tipo) {
+            case 1: tipoSel = "deportivo"; break;
+            case 2: tipoSel = "familiar"; break;
+            case 3: tipoSel = "camioneta"; break;
+            default:
+                cout << "Opción inválida.\n";
+                return;
+        }
+
+        cout << "\nAutos disponibles:\n";
+        bool hay = false;
+        for (auto& par : autos) {
+            if (par.second.getTipo() == tipoSel && par.second.estaDisponible()) {
+                par.second.mostrar();
+                hay = true;
+            }
+        }
+
+        if (!hay) {
+            cout << "No hay autos disponibles de ese tipo.\n";
+            return;
+        }
+
+        cout << "\nPlaca del auto: ";
+        string placa;
+        getline(cin, placa);
+
+        if (autos.count(placa) == 0 || !autos[placa].estaDisponible()) {
+            cout << "Placa inválida o no disponible.\n";
+            return;
+        }
+
+ 
+        string nombre, lic, tel;
+        cout << "Nombre: "; getline(cin, nombre);
+        cout << "Licencia: "; getline(cin, lic);
+        cout << "Teléfono: "; getline(cin, tel);
+
+        Cliente c(nombre, lic, tel);
+        clientes.push_back(c);
+        autos[placa].rentar();
+
+        cout << "Auto rentado: " << autos[placa].getModelo() << " - $" << autos[placa].getPrecio() << " por día\n";
+    }
+
+    void devolverAuto() {
+        cout << "Placa del auto a devolver: ";
+        string placa;
+        getline(cin, placa);
+
+        if (autos.count(placa) == 0) {
+            cout << "No existe esa placa.\n";
+            return;
+        }
+
+        if (autos[placa].estaDisponible()) {
+            cout << "Ese auto no estaba rentado.\n";
+            return;
+        }
+
+        autos[placa].devolver();
+        devueltos.push(autos[placa]);
+
+        cout << "Auto devuelto: " << autos[placa].getModelo() << endl;
+    }
+
+    void menu() {
+        cout << "\n--- RENTA DE AUTOS ---\n";
+        cout << "1. Rentar auto\n";
+        cout << "2. Devolver auto\n";
+        cout << "3. Salir\n";
+        cout << "Opción: ";
+    }
+};
+
+
+int main() {
+    Sistema s;
+
+   
+    s.agregarAuto("DEP1", "Bmw M4", "deportivo", 10500);
+    s.agregarAuto("DEP2", "Camaro", "deportivo", 9700);
+    s.agregarAuto("FAM1", "Jetta", "familiar", 2000);
+    s.agregarAuto("FAM2", "Rio", "familiar", 1800);
+    s.agregarAuto("CAM1", "Hilux", "camioneta", 4800);
+
+    int opcion;
+    do {
+        s.menu();
+        cin >> opcion;
+        cin.ignore();
+
+        switch(opcion) {
+            case 1:
+                s.rentarAuto();
+                break;
+            case 2:
+                s.devolverAuto();
+                break;
+            case 3:
+                cout << "Saliendo...\n";
+                break;
+            default:
+                cout << "Opción inválida.\n";
+        }
+    } while (opcion != 3);
+
+    return 0;
+}

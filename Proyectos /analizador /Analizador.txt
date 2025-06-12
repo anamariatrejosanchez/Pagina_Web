@@ -1,0 +1,126 @@
+import tkinter as tk
+import re
+
+# Análisis Léxico
+def analisis_lexico(entry, output):
+    texto = entry.get("1.0", "end-1c")
+
+    palabras_reservadas = {'if', 'else', 'for', 'while', 'def', 'return', 'print'}
+    simbolos = {'(', ')', '{', '}', ':', ',', ';'}
+    operadores = {'+', '-', '*', '/', '=', '>', '<'}
+
+    tokens = re.findall(r'\b\w+\b|[^\s\w]', texto)
+
+    reservadas = []
+    signos = []
+    identificadores = []
+    literales = []
+    ops = []
+    errores = []
+
+    for token in tokens:
+        if token in palabras_reservadas:
+            reservadas.append(token)
+        elif token in simbolos:
+            signos.append(token)
+        elif token in operadores:
+            ops.append(token)
+        elif re.fullmatch(r'\d+', token):
+            literales.append(token)
+        elif re.fullmatch(r'\".*?\"', token):
+            literales.append(token)
+        elif re.fullmatch(r'[a-zA-Z_]\w*', token):
+            identificadores.append(token)
+        else:
+            errores.append(token)
+
+    resultado = "=== Resultado del Análisis Léxico ===\n\n"
+    resultado += "1. Palabras reservadas:\n" + "\n".join(reservadas or ["Ninguna"]) + "\n\n"
+    resultado += "2. Símbolos de puntuación:\n" + "\n".join(signos or ["Ninguno"]) + "\n\n"
+    resultado += "3. Identificadores:\n" + "\n".join(identificadores or ["Ninguno"]) + "\n\n"
+    resultado += "4. Literales:\n" + "\n".join(literales or ["Ninguno"]) + "\n\n"
+    resultado += "5. Operadores:\n" + "\n".join(ops or ["Ninguno"]) + "\n\n"
+    resultado += "6. Errores léxicos:\n" + "\n".join(errores or ["Ninguno"]) + "\n"
+
+    output.delete("1.0", "end")
+    output.insert("end", resultado)
+
+# Análisis Sintáctico
+def analisis_sintactico(entry, output):
+    texto = entry.get("1.0", "end-1c")
+    lineas = texto.split("\n")
+
+    errores = []
+    for i, linea in enumerate(lineas, start=1):
+        if linea.strip().startswith("if") and not linea.strip().endswith(":"):
+            errores.append(f"Línea {i}: falta ':' al final de la estructura 'if'")
+        if "def " in linea and not linea.strip().endswith(":"):
+            errores.append(f"Línea {i}: falta ':' al final de la definición 'def'")
+
+    resultado = "=== Resultado del Análisis Sintáctico ===\n\n"
+    if errores:
+        resultado += "\n".join(errores) + "\n\nAnálisis sintáctico fallido"
+    else:
+        resultado += "Análisis sintáctico exitoso"
+
+    output.delete("1.0", "end")
+    output.insert("end", resultado)
+
+# Análisis Semántico
+def analisis_semantico(entry, output):
+    texto = entry.get("1.0", "end-1c")
+    lineas = texto.split("\n")
+
+    variables_definidas = set()
+    errores = []
+    palabras_reservadas = {'if', 'else', 'for', 'while', 'def', 'return', 'print'}
+
+    for i, linea in enumerate(lineas, start=1):
+        if '=' in linea:
+            partes = linea.split('=')
+            izquierda = partes[0].strip()
+            derecha = partes[1].strip()
+            if izquierda in palabras_reservadas:
+                errores.append(f"Línea {i}: no se puede usar la palabra reservada '{izquierda}' como nombre de variable")
+            else:
+                variables_definidas.add(izquierda)
+
+            # detectar variables usadas que no han sido definidas
+            tokens = re.findall(r'[a-zA-Z_]\w*', derecha)
+            for token in tokens:
+                if token not in variables_definidas and token not in palabras_reservadas:
+                    errores.append(f"Línea {i}: '{token}' usada sin estar definida")
+
+    resultado = "=== Resultado del Análisis Semántico ===\n\n"
+    if errores:
+        resultado += "\n".join(errores) + "\n\nAnálisis semántico fallido"
+    else:
+        resultado += "Análisis semántico exitoso"
+
+    output.delete("1.0", "end")
+    output.insert("end", resultado)
+
+# Interfaz gráfica
+root = tk.Tk()
+root.title("Analizador Léxico, Sintáctico y Semántico")
+
+entry = tk.Text(root, height=10, width=80)
+entry.pack(pady=5)
+
+frame = tk.Frame(root)
+frame.pack()
+
+btn_lexico = tk.Button(frame, text="Análisis Léxico", command=lambda: analisis_lexico(entry, output))
+btn_lexico.grid(row=0, column=0, padx=5)
+
+btn_sintactico = tk.Button(frame, text="Análisis Sintáctico", command=lambda: analisis_sintactico(entry, output))
+btn_sintactico.grid(row=0, column=1, padx=5)
+
+btn_semantico = tk.Button(frame, text="Análisis Semántico", command=lambda: analisis_semantico(entry, output))
+btn_semantico.grid(row=0, column=2, padx=5)
+
+output = tk.Text(root, height=20, width=80)
+output.pack(pady=10)
+
+root.mainloop()
+    

@@ -1,0 +1,15 @@
+public class IngredienteBuilder
+{
+    private string _nombre;
+
+    public IngredienteBuilder SetNombre(string nombre)
+    {
+        _nombre = nombre;
+        return this;
+    }
+
+    public Ingrediente Build()
+    {
+        return new Ingrediente(_nombre);
+    }
+}

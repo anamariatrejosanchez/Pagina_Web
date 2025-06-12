@@ -1,0 +1,7 @@
+public class IngredienteFactory
+{
+    public Ingrediente CrearIngrediente(string nombre)
+    {
+        return new Ingrediente(nombre);
+    }
+}

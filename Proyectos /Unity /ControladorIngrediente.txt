@@ -1,0 +1,34 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ControladorIngredientes : MonoBehaviour
+{
+    private IngredienteFactory _ingredienteFactory;
+    private IngredienteBuilder _ingredienteBuilder;
+
+    public Button nutela;   // Referencia al botón Nutela
+    public Button helado;   // Referencia al botón Helado
+    public Button fresa;    // Referencia al botón Fresa
+    public Button nueces;   // Referencia al botón Nueces
+
+    void Start()
+    {
+        _ingredienteFactory = new IngredienteFactory();
+        _ingredienteBuilder = new IngredienteBuilder();
+
+        // Asignar funciones a los botones
+        nutela.onClick.AddListener(() => AgregarIngrediente("Nutela"));
+        helado.onClick.AddListener(() => AgregarIngrediente("Helado"));
+        fresa.onClick.AddListener(() => AgregarIngrediente("Fresa"));
+        nueces.onClick.AddListener(() => AgregarIngrediente("Nueces"));
+    }
+
+    void AgregarIngrediente(string nombre)
+    {
+      
+        Ingrediente ingrediente = _ingredienteFactory.CrearIngrediente(nombre);
+        ingrediente.MostrarIngrediente();
+
+       
+    }
+}
